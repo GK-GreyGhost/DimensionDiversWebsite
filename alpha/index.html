@@ -27,12 +27,16 @@
             text-transform: uppercase;
         }
 
+        h2{
+            margin:25px;
+            margin-bottom:10px;
+        }
+
         p{
             padding:10px;
             max-width:800px;
             margin:10px auto;
-            text-align:center;
-            vertical-align: middle;
+            text-align:left;
             padding-top:3.5vh;
             border-radius:3px;
             font-size:1.5em;
@@ -48,13 +52,10 @@
 
         ul{
             text-align:left;
-            max-width:450px;
+            max-width:830px;
         }
 
-        nav{
-            margin-bottom:50px;
-        }
-
+  
         footer{
             position:fixed;
             bottom:5px;
@@ -100,8 +101,33 @@
             border-radius:3px;
             padding:10px 25px;
         }
+
+        table, tr, td{
+            border:solid 1px #fff;
+            border-collapse: collapse;
+        }
+
+        td{
+            padding:10px;
+        }
         
-        @media screen and (min-width:1024px) and (grid: 0) {
+        table{
+            width:800px;
+            margin:auto;
+        }
+
+        nav{
+            position:fixed;
+            bottom:10px;
+            left:20px;
+        }
+
+        nav a{
+            display:block;
+            margin:10px 0px;
+        }
+
+        @media screen and (max-width:1px) and (grid: 0) {
             body{
                 padding:0px;
                 display:grid;
@@ -146,6 +172,12 @@
         <img src="/alpha/i2/68725ea70f8938b9.png" alt="">
         <img src="/alpha/i2/2131427a6355ccf9.png" alt="">
     </div>
+
+    <nav>
+        <a href="//pinguinogelato.itch.io/dimension-divers">Download on Itch.io</a>
+        <a href="//pinguinogelato.itch.io/dimension-divers">Soundtrack on Spotify</a>
+    </nav>
+
     <p>
         Henry, A boy wakes up trapped in a dark dungeon, unsure of where he is yet determined to get home. Adventures, dangers and new friends await in <i>The Abattoir</i> 
     </p>
@@ -169,11 +201,27 @@
         <li>Special Thanks to my significant other, I couldn’t have finished this without you <3 </li>
     </ul>
 
-    <nav>
-        <a href="//pinguinogelato.itch.io/dimension-divers">Download on Itch.io</a>
-        <a href="//pinguinogelato.itch.io/dimension-divers">Soundtrack on Spotify</a>
-
-    </nav>
+    <h2>Roadmap</h2>
+    <table>
+        <tr>
+            <td>Feature</td><td>Description</td><td>Release Date</td>
+        </tr>
+        <tr>
+            <td>Playable Character 2</td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>Playable Character 3</td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>Level Editor</td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>Community Levels</td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>Multiplayer</td><td></td><td></td>
+        </tr>
+    </table>
 
     <footer>Copyright Harrison Hartley 2023</footer>
 </body>
