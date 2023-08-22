@@ -3,9 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dimension Divers</title>
+    <style>
+
+        *{
+            position:relative;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+        body{
+            padding:2.5em;
+            text-align:center;
+        }
+
+        h1{
+            font-size:6em;
+            margin-bottom:0px;
+        }
+
+        p{
+            padding:10px;
+            border:solid 1px #000;
+            max-width:800px;
+            margin:10px auto;
+        }
+
+        ul.main{
+            margin:10px auto;
+            border:solid 1px #000;
+            padding:20px 30px;
+            line-height: 2em;
+        }
+
+        ul{
+            text-align:left;
+            max-width:450px;
+        }
+
+        nav{
+            margin-bottom:50px;
+        }
+
+        footer{
+            position:fixed;
+            bottom:5px;
+            right:10px;
+            opacity:0.5;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        html,body{
+            margin:0px;
+        }
+        
+        @media screen and (min-width:1024px) and (grid: 0) {
+            body{
+                padding:0px;
+                display:grid;
+                grid-template-columns: 74px auto 20vw;
+                grid-template-rows: 150px auto 40px;
+            }
+
+            h1{
+                grid-area: 2 / 2 / 1 / 2;
+            }
+
+            nav{
+                grid-area: 1 / 1 / 1 / 1;
+                padding:5px 0px;
+
+            }
+
+            .gallery{
+                grid-area: 2 / 2 / 2 / 2;
+            }
+
+            p{
+                margin:10px;
+            }
+
+            ul.main{
+                grid-area: 2 / 3 / 3 / 3;
+                margin:10px;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Dimension Divers</h1>
+    <nav>
+        <a href="//mstdn.social/@Harrison">
+            <img src="https://placehold.co/64x64" alt="">
+        </a>
+        <a href="//twitter.com/pinguinogelato">
+            <img src="https://placehold.co/64x64" alt="">
+        </a>
+        <a href="//pinguinogelato.itch.io/dimension-divers">
+            <img src="https://placehold.co/64x64" alt="">
+        </a>
+        <a href="//youtube.com/c/gelatokitty">
+            <img src="https://placehold.co/64x64" alt="">
+        </a>
+        <a href="">
+            <img src="https://placehold.co/64x64" alt="">
+        </a>
+        <img src="https://placehold.co/64x64" alt="">
+    </nav>
+    <div class="gallery">
+        <img src="https://placehold.co/640x360" alt="">
+        <img src="https://placehold.co/640x360" alt="">
+        <img src="https://placehold.co/640x360" alt="">
+        <img src="https://placehold.co/640x360" alt="">
+    </div>
+    <p>
+        Henry, A boy wakes up trapped in a dark dungeon, unsure of where he is yet determined to get home. Adventures, dangers and new friends await in <i>The Abattoir</i> 
+    </p>
+
+    <ul class="main">
+        <li>Action Adventure Game</li>
+        <li>Single Player</li>
+        <li>Multiplayer Coming Soon</li>
+        <li>Windows & Linux</li>
+        <li>Release Dates</li>
+            <ul class="sub">
+                <li>Chapter 1 - The Abattoir - October 1st 2023</li>
+                <li>Chapter 2 - Combat Research Division - November 1st 2023</li>
+                <li>Chapter 3 - Caprice - February 1st 2024</li>
+            </ul>
+        <li>Credits</li>
+        <ul class="sub">
+            <li>Game / Music / Art by Harrison Hartley / GreyGhost</li>
+            <li>Made with Godot 4, Ableton Live, Bitwig, Affinity Designer / Photo, Krita, Aseprite / LibreSprite</li>
+        </ul>
+        <li>Special Thanks to my significant other, I couldn’t have finished this without you <3 </li>
+
+    </ul>
+    <footer>Copyright Harrison Hartley 2023</footer>
 </body>
 </html>
