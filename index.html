@@ -1,1 +1,231 @@
-Coming Soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimension Divers</title>
+    <style>
+
+        *{
+            position:relative;
+            box-sizing: border-box;
+            font-family: monospace;
+            font-weight:bold;
+        }
+
+        body{
+            background:url("/i2/bg2.png");
+            background-size:cover;
+            background-position: center center;
+            padding:2.5em;
+            text-align:center;
+        }
+
+        h1{
+            font-size:6em;
+            margin:0px;
+            margin-bottom:50px;            
+            color:#fff;
+            text-transform: uppercase;
+        }
+
+        h2{
+            margin:25px;
+            margin-bottom:10px;
+        }
+
+        p{
+            padding:10px;
+            max-width:800px;
+            margin:10px auto;
+            text-align:left;
+            padding-top:3.5vh;
+            border-radius:3px;
+            font-size:1.5em;
+        }
+
+        ul.main{
+            border-radius:3px;
+            margin:10px auto;
+            padding:20px 30px;
+            line-height: 2em;
+            font-size:1.25em;
+        }
+
+        ul{
+            text-align:left;
+            max-width:830px;
+        }
+
+  
+        footer{
+            position:fixed;
+            bottom:5px;
+            right:10px;
+            opacity:0.5;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        html,body{
+            margin:0px;
+        }
+
+        .background{
+            position:fixed;
+            top:-150px;
+            right:-150px;
+            bottom:-150px;
+            left:-150px;
+            margin:auto;
+            
+            filter:blur(50px) ;
+            background:hsl(218, 80%, 56%);
+            background-size:cover;
+            background-repeat:no-repeat;
+           #background-image: linear-gradient(hsl(218, 80%, 56%),hsl(268, 70%, 66%))
+        }
+
+        .gallery img{
+            width:640px;
+            height:360px;
+            border-radius:3px;
+            object-fit: cover;
+            margin:4px 2px;
+        }
+
+        nav{
+            margin:0px;
+            margin-top:25px;
+        }
+
+        .gallery{
+            margin:25px;
+            margin-top:50px;
+        }
+
+        nav a{
+            padding:10px;
+            background:#fff;
+            color:#1e71ff;
+            font-size:1.5em;
+            border-radius:3px;
+            padding:10px 25px;
+        }
+
+        nav a:hover{
+            background:#000;
+            color:#fff;
+        }
+
+        table, tr, td{
+            border:solid 1px #fff;
+            border-collapse: collapse;
+        }
+
+        td{
+            padding:10px;
+        }
+        
+        table{
+            width:800px;
+            margin:auto;
+        }
+
+        img{
+            border-radius:10px;
+        }
+
+        @media screen and (max-width:1px) and (grid: 0) {
+            body{
+                padding:0px;
+                display:grid;
+                grid-template-columns: 1px auto 30vw;
+                grid-template-rows: 150px auto 40px;
+            }
+
+            h1{
+                grid-area: 2 / 2 / 1 / 2;
+            }
+
+            nav{
+                grid-area: 3 / 3 / 3 / 3;
+                padding:5px 0px;
+
+            }
+
+            .gallery{
+                grid-area: 2 / 2 / 2 / 2;
+            }
+
+            p{
+                margin:10px;
+                grid-area: 1 / 3 / 1 / 3;
+            }
+
+            ul.main{
+                grid-area: 2 / 3 / 3 / 3;
+                margin:10px;
+            }
+        }
+
+        .logo{
+            width:50vmin;
+        }
+
+        p, ul{
+            background:#fff;
+            color:#1e71ff;
+        }
+
+        p{
+            margin:25px auto;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <img class='logo' src="i2/Frame%202.svg" alt="">
+
+    <h1>Dimension Divers</h1>
+
+    <nav>
+        <a href="https://discord.gg/n3mD8ZqnJu">Discord</a>
+        <a href="https://mstdn.social/@Harrison/">Mastodon</a>
+        <a href="https://bsky.app/profile/pinguinogelato.bsky.social">Bluesky</a>
+        <a href="https://twitter.com/pinguinogelato">Twitter / X</a>
+        <a href="https://pinguinogelato.itch.io/dimension-divers">Itch.io</a>
+    </nav>
+
+    <div class="gallery">
+        <img src="/i2/183b052e034f9a9b.png" alt="">
+        <img src="/i2/6343e19191ef9fd4.png" alt="">
+        <img src="/i2/68725ea70f8938b9.png" alt="">
+        <img src="/i2/2131427a6355ccf9.png" alt="">
+    </div>
+
+    <p>
+        Henry, A boy wakes up trapped in a dark dungeon, unsure of where he is yet determined to get home.
+        please enjoy a sneak peak of the first chapter :D
+    </p>
+
+    <ul class="main">
+        <li>Action Adventure Game</li>
+        <li>Single Player (multiplayer planned for chapter 5) </li>
+        <li>Windows & Linux (Mac coming soon)</li>
+        <li>Game by Harrison Hartley / GreyGhost</li>
+        <li>Made with</li>
+        <ul>
+            <li>Godot 3/4</li><li> Ableton Live</li><li> Bitwig</li><li> Affinity Designer / Photo</li><li> Krita</li><li> Aseprite / LibreSprite</li><li> Figma</li>
+        </ul>
+        <li>Special Thanks to my significant other, I couldn’t have finished this without you ❤️ </li>
+    </ul>
+
+    <footer>Copyright Harrison Hartley 2023</footer>
+
+</body>
+</html>
