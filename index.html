@@ -14,9 +14,6 @@
         }
 
         body{
-            background:url("/i2/bg2.png");
-            background-size:cover;
-            background-position: center center;
             padding:2.5em;
             text-align:center;
         }
@@ -38,8 +35,7 @@
             padding:10px;
             max-width:800px;
             margin:10px auto;
-            text-align:left;
-            padding-top:3.5vh;
+            text-align:center;
             border-radius:3px;
             font-size:1.5em;
         }
@@ -80,17 +76,20 @@
             bottom:-150px;
             left:-150px;
             margin:auto;
-            
-            filter:blur(50px) ;
-            background:hsl(218, 80%, 56%);
+            background:url("/i2/bg2.png");
+            filter:blur(10px);
+            #background:hsl(218, 80%, 56%);
             background-size:cover;
+
             background-repeat:no-repeat;
-           #background-image: linear-gradient(hsl(218, 80%, 56%),hsl(268, 70%, 66%))
+           #background-image: linear-gradient(hsl(218, 80%, 56%),hsl(268, 70%, 66%));
+
+
         }
 
         .gallery img{
-            width:640px;
-            height:360px;
+            width:calc(50% - 8px);
+            height:50vmin;
             border-radius:3px;
             object-fit: cover;
             margin:4px 2px;
@@ -172,7 +171,7 @@
         }
 
         .logo{
-            width:50vmin;
+            height:33vmin;
         }
 
         p, ul{
@@ -182,34 +181,27 @@
 
         p{
             margin:25px auto;
+            margin-top:35px;
             padding:10px;
         }
 
     </style>
 </head>
 <body>
-
+    <div class="background"></div>
     <img class='logo' src="i2/Frame%202.svg" alt="">
 
     <h1>Dimension Divers</h1>
 
     <nav>
+        <a href="https://pinguinogelato.itch.io/dimension-divers">Itch.io</a>
         <a href="https://discord.gg/n3mD8ZqnJu">Discord</a>
         <a href="https://mstdn.social/@Harrison/">Mastodon</a>
         <a href="https://bsky.app/profile/pinguinogelato.bsky.social">Bluesky</a>
         <a href="https://twitter.com/pinguinogelato">Twitter / X</a>
-        <a href="https://pinguinogelato.itch.io/dimension-divers">Itch.io</a>
     </nav>
 
-    <div class="gallery">
-        <img src="/i2/183b052e034f9a9b.png" alt="">
-        <img src="/i2/6343e19191ef9fd4.png" alt="">
-        <img src="/i2/68725ea70f8938b9.png" alt="">
-        <img src="/i2/2131427a6355ccf9.png" alt="">
-    </div>
-
     <p>
-        Henry, A boy wakes up trapped in a dark dungeon, unsure of where he is yet determined to get home.
         please enjoy a sneak peak of the first chapter :D
     </p>
 
@@ -224,6 +216,15 @@
         </ul>
         <li>Special Thanks to my significant other, I couldn’t have finished this without you ❤️ </li>
     </ul>
+
+
+    <div class="gallery">
+        <img src="/i2/183b052e034f9a9b.png" alt="">
+        <img src="/i2/6343e19191ef9fd4.png" alt="">
+        <img src="/i2/68725ea70f8938b9.png" alt="">
+        <img src="/i2/2131427a6355ccf9.png" alt="">
+    </div>
+
 
     <footer>Copyright Harrison Hartley 2023</footer>
 
